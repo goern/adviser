@@ -30,7 +30,8 @@ class Test(TestCommand):
 
     _IMPLICIT_PYTEST_ARGS = [
         "--timeout=2",
-        "--cov=./thoth",
+        "--cov=thoth",
+        "--cov-report=xml",
         "--mypy",
         "--capture=no",
         "--verbose",
